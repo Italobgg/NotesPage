@@ -4,14 +4,13 @@ class FormularioCadastro extends Component {
 
   constructor(props){
     super(props);
-    this.titulo="";
-    this.texto="";
+    this.titulo ="";
+    this.texto ="";
   }
 
   _handleMudancaTitulo(evento){
     evento.stopPropagation();
     this.titulo = evento.target.value;
-    console.log(this.titulo);
   }
 
   _handleMudancaTexto(evento){
@@ -23,13 +22,12 @@ class FormularioCadastro extends Component {
     evento.preventDefault();
     evento.stopPropagation();
     this.props.criarNota(this.titulo, this.texto);
+    
   }
-
-  
 
   render() {
     return (
-      <form className="form-cadastro "
+      <form className="form-cadastro"
         onSubmit={this._criarNota.bind(this)}
       >
         <input
@@ -37,7 +35,6 @@ class FormularioCadastro extends Component {
           placeholder="Título"
           className="form-cadastro_input"
           onChange={this._handleMudancaTitulo.bind(this)}
-
         />
         <textarea
           rows={15}
