@@ -1,4 +1,5 @@
 .form-cadastro {
+
   flex-grow: 2;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   z-index: 1;
@@ -8,6 +9,8 @@
   padding: 12px 40px;
 }
 .form-cadastro_input {
+  border-radius: 15px;
+
   margin-top: 8px;
   padding: 4px;
   border: none;
@@ -17,6 +20,7 @@
 }
 
 .form-cadastro_submit {
+  border-radius: 15px;
   align-self: flex-end;
   width: 30%;
   background-color: var(--secundaria);
@@ -26,4 +30,5 @@
 
 .form-cadastro_submit:active {
   background-color: var(--secundaria-ativa);
+
 }
